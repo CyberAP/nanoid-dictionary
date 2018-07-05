@@ -15,3 +15,9 @@ const dictionary = require('nanoid-dictionary');
 
 const safeFileName = generate(dictionary.filename, 10);
 ```
+
+##Character sets
+
+###`filename`
+
+Provides a cross-platform character set for safe filename generation.
