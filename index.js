@@ -1,3 +1,18 @@
+var alphabets = {
+    english: {
+        lowercase: 'abcdefghijklmnopqrstuvwxyz',
+        uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    }
+};
+
+var numbers = '0123456789';
+
 module.exports = {
-    filename: '_-,0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    alphabets: alphabets,
+    numbers: numbers,
+    filename:
+        '_-,' +
+        numbers +
+        alphabets.english.lowercase +
+        alphabets.english.uppercase
 }

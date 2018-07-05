@@ -20,4 +20,20 @@ const safeFileName = generate(dictionary.filename, 10);
 
 ### `filename`
 
-Provides a cross-platform character set for safe filename generation.
+Cross-platform character set for safe filename generation.
+
+### `numbers`
+
+Numbers from 0 to 9
+
+### `alphabets`
+
+#### `english`
+
+##### `lowercase`
+
+Lowercase English letters
+
+##### `uppercase`
+
+Uppercase English letters
