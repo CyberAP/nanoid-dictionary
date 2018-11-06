@@ -1,18 +1,21 @@
-var alphabets = {
-    english: {
-        lowercase: 'abcdefghijklmnopqrstuvwxyz',
-        uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    }
-};
+var lowercase = require('./lowercase');
+var uppercase = require('./uppercase');
+var numbers = require('./numbers');
+var filename = require('./filename');
+var lookalikes = require('./lookalikes');
+var preventMisreadings = require('./preventMisreadings');
 
-var numbers = '0123456789';
+var alphabets = {
+    lowercase: lowercase,
+    uppercase: uppercase,
+};
 
 module.exports = {
     alphabets: alphabets,
+    lowercase: lowercase,
+    uppercase: uppercase,
     numbers: numbers,
-    filename:
-        '_-,' +
-        numbers +
-        alphabets.english.lowercase +
-        alphabets.english.uppercase
+    filename: filename,
+    lookalikes: lookalikes,
+    preventMisreadings: preventMisreadings
 }

@@ -1,8 +1,9 @@
 {
   "name": "nanoid-dictionary",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Predefined character sets to use with nanoid",
   "main": "index.js",
   "author": "Stanislav Lashmanov <stasvarenkin@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "github:CyberAP/nanoid-dictionary"
 }
