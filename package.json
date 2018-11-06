@@ -6,8 +6,5 @@
   "main": "index.js",
   "author": "Stanislav Lashmanov <stasvarenkin@gmail.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CyberAP/nanoid-dictionary.git"
-  },
+  "repository": "github:CyberAP/nanoid-dictionary"
 }
