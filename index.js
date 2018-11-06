@@ -1,19 +1,21 @@
-var lowercase = require('./alphabets/english/lowercase');
-var uppercase = require('./alphabets/english/uppercase');
+var lowercase = require('./lowercase');
+var uppercase = require('./uppercase');
 var numbers = require('./numbers');
-var filename = require('./legacy/filename');
+var filename = require('./filename');
+var lookalikes = require('./lookalikes');
 var preventMisreadings = require('./preventMisreadings');
 
 var alphabets = {
-    english: {
-        lowercase: lowercase,
-        uppercase: uppercase
-    }
+    lowercase: lowercase,
+    uppercase: uppercase,
 };
 
 module.exports = {
     alphabets: alphabets,
+    lowercase: lowercase,
+    uppercase: uppercase,
     numbers: numbers,
     filename: filename,
+    lookalikes: lookalikes,
     preventMisreadings: preventMisreadings
 }
