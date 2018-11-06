@@ -2,7 +2,6 @@
   "name": "nanoid-dictionary",
   "version": "1.1.0",
   "description": "Predefined character sets to use with nanoid",
-  "files": ["**/*.js", "**/*.json"],
   "main": "index.js",
   "author": "Stanislav Lashmanov <stasvarenkin@gmail.com>",
   "license": "MIT",
