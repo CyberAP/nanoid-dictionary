@@ -91,8 +91,9 @@ Deault unsafe character set is taken from `lookalikes`.
 ```javascript
 
 const preventMisreadings = require('nanoid-dictionary/preventMisreadings');
-const unsafeString = 'a`\'b';
-const unsafeChars = '`\'';
+const lookalikes = require('nanoid-dictionary/lookalikes');
+const unsafeString = 'a1`\'lb';
+const unsafeChars = '`\'' + lookalikes;
 
 const safeString = preventMisreadings(unsafeString, unsafeChars); \\ 'ab'
 
