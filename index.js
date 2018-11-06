@@ -2,6 +2,7 @@ var lowercase = require('./alphabets/english/lowercase');
 var uppercase = require('./alphabets/english/uppercase');
 var numbers = require('./numbers');
 var filename = require('./legacy/filename');
+var preventMisreadings = require('./preventMisreadings');
 
 var alphabets = {
     english: {
@@ -13,5 +14,6 @@ var alphabets = {
 module.exports = {
     alphabets: alphabets,
     numbers: numbers,
-    filename: filename
+    filename: filename,
+    preventMisreadings: preventMisreadings
 }
