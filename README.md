@@ -13,13 +13,15 @@ Require a generator and pass a string from the dictionary
 const generate = require('nanoid/generate');
 const dictionary = require('nanoid-dictionary');
 
-const englishLowercase = generate(dictionary.lowercase, 10);
+const lowercaseRandomString = generate(dictionary.lowercase, 10);
 ```
 
 Or instead you can load only a particular dictionary
 
 ```javascript
-const englishLowercase = generate('nanoid-dictionary/lowercase', 10);
+const englishLowercase = require('nanoid-dictionary/lowercase');
+
+const lowercaseRandomString = generate(englishLowercase, 10);
 ```
 
 
