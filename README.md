@@ -47,7 +47,7 @@ Uppercase English letters
 
 ### `preventMisreadings(str, chars)`
 
-It accepts a string and removes all the characters that look similar. You can pass your own character set if you want.
+It accepts a string and removes all the characters that look similar. You can pass your own optional character set if you want.
 
 ```javascript
 const preventMisreadings = require('nanoid-dictionary/preventMisreadings');
@@ -62,7 +62,7 @@ A string to process.
 
 #### `chars`
 
-An array of unsafe characters.
+An optional array of unsafe characters.
 
 Deault unsafe characters are: `1`, `l`, `0`, `o`
 
