@@ -39,7 +39,7 @@ const numbers = require('nanoid-dictionary/numbers');
 
 Lowercase English letters.
 
-Available both as `alphabets/lowercase` and simply `lowercase`.
+Available both as `alphabets.lowercase` and simply `lowercase`.
 
 ```javascript
 const englishLowercase = require('nanoid-dictionary/lowercase');
@@ -49,7 +49,7 @@ const englishLowercase = require('nanoid-dictionary/lowercase');
 
 Uppercase English letters.
 
-Available both as `alphabets/uppercase` and simply `uppercase`.
+Available both as `alphabets.uppercase` and simply `uppercase`.
 
 ```javascript
 const englishUppercase = require('nanoid-dictionary/uppercase');
