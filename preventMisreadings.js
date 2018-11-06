@@ -1,6 +1,6 @@
 var confusingChars = ['1', 'l', '0', 'o'];
 var matchAllOccurences = function(symbol) {
-    return new RegeExp(symbol + '+', 'gi');
+    return new RegExp(symbol + '+', 'gi');
 };
 
 module.exports = function(str, chars) {
