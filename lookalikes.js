@@ -1,1 +1,0 @@
-module.exports = '1l0o';

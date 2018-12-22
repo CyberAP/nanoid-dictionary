@@ -1,5 +1,11 @@
 # Change log
 
+## 2.0.0
+
+- Removed `alphabets` and `filename` sets (lowercase and uppercase still available)
+- Removed `preventMisreadings` function
+- Added `nolookalikes` set
+
 ## 1.1.0
 
 - Added changelog

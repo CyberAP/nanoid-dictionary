@@ -16,9 +16,10 @@ const dictionary = require('nanoid-dictionary');
 const lowercaseRandomString = generate(dictionary.lowercase, 10);
 ```
 
-Or instead you can load only a particular dictionary
+Or instead you can require a specific dictionary
 
 ```javascript
+const generate = require('nanoid/generate');
 const englishLowercase = require('nanoid-dictionary/lowercase');
 
 const lowercaseRandomString = generate(englishLowercase, 10);
@@ -35,9 +36,7 @@ Numbers from 0 to 9
 const numbers = require('nanoid-dictionary/numbers');
 ```
 
-### `alphabets`
-
-#### `lowercase`
+### `lowercase`
 
 Lowercase English letters.
 
@@ -47,7 +46,7 @@ Available both as `alphabets.lowercase` and simply `lowercase`.
 const englishLowercase = require('nanoid-dictionary/lowercase');
 ```
 
-#### `uppercase`
+### `uppercase`
 
 Uppercase English letters.
 
@@ -57,54 +56,10 @@ Available both as `alphabets.uppercase` and simply `uppercase`.
 const englishUppercase = require('nanoid-dictionary/uppercase');
 ```
 
-### `lookalikes`
+### `nolookalikes`
 
-Characters that have lookalikes: `1`, `l`, `0`, `O`
-
-```javascript
-const lookalikes = require('nanoid-dictionary/lookalikes');
-```
-
-
-
-## Helper functions
-
-### `preventMisreadings(str, unsafeChars)`
-
-It accepts a string and removes all the characters that look similar. You can pass your own optional character set if you want.
+English alphabet without lookalikes: `1`, `l`, `I`, `0`, `O`, `o`, `u`, `v`
 
 ```javascript
-const preventMisreadings = require('nanoid-dictionary/preventMisreadings');
-const unsafeString = 'a1l0ob';
-
-const safeString = preventMisreadings(unsafeString); \\ 'ab'
+const nolookalikes = require('nanoid-dictionary/nolookalikes');
 ```
-
-#### `str`
-
-A string to process.
-
-#### `unsafeChars`
-
-An optional string that contains only unsafe characters.
-
-Deault unsafe character set is taken from `lookalikes`.
-
-```javascript
-
-const preventMisreadings = require('nanoid-dictionary/preventMisreadings');
-const lookalikes = require('nanoid-dictionary/lookalikes');
-const unsafeString = 'a1`\'lb';
-const unsafeChars = '`\'' + lookalikes;
-
-const safeString = preventMisreadings(unsafeString, unsafeChars); \\ 'ab'
-
-```
-
-## Legacy character sets
-
-### `filename`
-
-Cross-platform character set for safe filename generation.
-
-You probably don't need it anymore, latest `nanoid` is already using filesystem-safe base string.

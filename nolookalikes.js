@@ -1,0 +1,1 @@
+module.exports = '23456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstwxyz';
