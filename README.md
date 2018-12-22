@@ -1,5 +1,5 @@
 # nanoid-dictionary
-Predefined character sets to use with [nanoid](https://github.com/ai/nanoid)
+Predefined character sets to use with [nanoid](https://github.com/ai/nanoid). Used by [nanoid-generate](https://github.com/CyberAP/nanoid-generate).
 
 ## Usage
 
