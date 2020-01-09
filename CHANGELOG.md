@@ -1,5 +1,9 @@
 # Change log
 
+## 3.0.0
+
+- Removed `5`, `S` and `s` from `nolookalikes` alphabet, due to similarities on some fonts
+
 ## 2.0.0
 
 - Removed `alphabets` and `filename` sets (lowercase and uppercase still available)
