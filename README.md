@@ -1,6 +1,8 @@
 # nanoid-dictionary
 Predefined character sets to use with [nanoid](https://github.com/ai/nanoid). Used by [nanoid-generate](https://github.com/CyberAP/nanoid-generate).
 
+[![npm](https://img.shields.io/npm/v/nanoid-dictionary)](https://www.npmjs.com/package/nanoid-dictionary)
+
 ## Usage
 
 Install nanoid and dictionary
