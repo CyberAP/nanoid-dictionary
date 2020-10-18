@@ -60,8 +60,18 @@ const englishUppercase = require('nanoid-dictionary/uppercase');
 
 ### `nolookalikes`
 
-Numbers and english alphabet without lookalikes: `1`, `l`, `I`, `0`, `O`, `o`, `u`, `v`, `5`, `S`, `s`, `2`, `Z`
+Numbers and english alphabet without lookalikes: `1`, `l`, `I`, `0`, `O`, `o`, `u`, `v`, `5`, `S`, `s`, `2`, `Z`.
 
 ```javascript
 const nolookalikes = require('nanoid-dictionary/nolookalikes');
+```
+
+### `nolookalikes-safe`
+
+Same as `noolookalikes` but with removed vowels and following letters: `3`, `4`, `x`, `X`, `V`.
+
+This list should protect you from accidentally getting obscene words in generated strings.
+
+```javascript
+const nolookalikesSafe = require('nanoid-dictionary/nolookalikes-safe');
 ```

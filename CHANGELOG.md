@@ -1,5 +1,9 @@
 # Change log
 
+## 4.1.0
+
+- Added `nolookalikes-safe` set to protect from accidental obscene words
+
 ## 4.0.0
 
 - Removed `2` and `Z` ([#5](https://github.com/CyberAP/nanoid-dictionary/pull/5)) by [@kripod](https://github.com/kripod)
