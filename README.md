@@ -60,7 +60,7 @@ const englishUppercase = require('nanoid-dictionary/uppercase');
 
 ### `nolookalikes`
 
-Numbers and english alphabet without lookalikes: `1`, `l`, `I`, `0`, `O`, `o`, `u`, `v`, `5`, `S`, `s`
+Numbers and english alphabet without lookalikes: `1`, `l`, `I`, `0`, `O`, `o`, `u`, `v`, `5`, `S`, `s`, `2`, `Z`
 
 ```javascript
 const nolookalikes = require('nanoid-dictionary/nolookalikes');

@@ -1,5 +1,9 @@
 # Change log
 
+## 4.0.0
+
+- Removed `2` and `Z` ([#5](https://github.com/CyberAP/nanoid-dictionary/pull/5)) by [@kripod](https://github.com/kripod)
+
 ## 3.0.0
 
 - Removed `5`, `S` and `s` from `nolookalikes` alphabet, due to similarities on some fonts
