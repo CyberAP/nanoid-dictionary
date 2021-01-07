@@ -3,6 +3,7 @@ var uppercase = require('./uppercase');
 var numbers = require('./numbers');
 var nolookalikes = require('./nolookalikes');
 var nolookalikesSafe = require('./nolookalikes-safe');
+var alphanumeric = require('./alphanumeric');
 
 module.exports = {
     lowercase: lowercase,
@@ -10,4 +11,5 @@ module.exports = {
     numbers: numbers,
     nolookalikes: nolookalikes,
     nolookalikesSafe: nolookalikesSafe,
+    alphanumeric: alphanumeric,
 }
