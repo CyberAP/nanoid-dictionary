@@ -1,5 +1,9 @@
 # Change log
 
+## 4.2.0
+
+- Added `alphanumeric` set ([#7](https://github.com/CyberAP/nanoid-dictionary/pull/7)) by [@anshulsahni](https://github.com/anshulsahni)
+
 ## 4.1.0
 
 - Added `nolookalikes-safe` set to protect from accidental obscene words
