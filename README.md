@@ -58,6 +58,16 @@ Available both as `alphabets.uppercase` and simply `uppercase`.
 const englishUppercase = require('nanoid-dictionary/uppercase');
 ```
 
+### `alphanumeric`
+
+Combination of all the smallcase, uppercase charaters and numbers from 0 to 9
+
+Does not include any symbols or special characters
+
+```javascript
+const alphanumeric = require('nanoid/alphanumeric');
+```
+
 ### `nolookalikes`
 
 Numbers and english alphabet without lookalikes: `1`, `l`, `I`, `0`, `O`, `o`, `u`, `v`, `5`, `S`, `s`, `2`, `Z`.
