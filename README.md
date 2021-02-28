@@ -65,7 +65,7 @@ Combination of all the smallcase, uppercase charaters and numbers from 0 to 9
 Does not include any symbols or special characters
 
 ```javascript
-const alphanumeric = require('nanoid/alphanumeric');
+const alphanumeric = require('nanoid-dictionary/alphanumeric');
 ```
 
 ### `nolookalikes`
