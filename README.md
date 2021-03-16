@@ -9,24 +9,54 @@ Install nanoid and dictionary
 
 `npm i nanoid nanoid-dictionary`
 
-Require a generator and pass a string from the dictionary
-
 ```javascript
-const generate = require('nanoid/generate');
-const dictionary = require('nanoid-dictionary');
+const nanoidDic      = require('nanoid-dictionary');
+const customAlphabet = require('nanoid').customAlphabet;
+const nanoid         = customAlphabet(nanoidDic.lowercase, 10);
 
-const lowercaseRandomString = generate(dictionary.lowercase, 10);
+let id = nanoid();
+console.log(id);
 ```
 
 Or instead you can require a specific dictionary
 
 ```javascript
-const generate = require('nanoid/generate');
-const englishLowercase = require('nanoid-dictionary/lowercase');
+const nanoidDic      = require('nanoid-dictionary/lowercase');
+const customAlphabet = require('nanoid').customAlphabet;
+const nanoid         = customAlphabet(nanoidDic, 10);
 
-const lowercaseRandomString = generate(englishLowercase, 10);
+let id = nanoid();
+console.log(id);
 ```
 
+**TypeScript**
+
+Install nanoid and dictionary
+
+`npm i nanoid nanoid-dictionary`
+`npm i @types/nanoid-dictionary --save-dev`
+
+```typescript
+import * as NANOID_DIC    from 'nanoid-dictionary';
+import { customAlphabet } from 'nanoid';
+
+const nanoid         = customAlphabet(NANOID_DIC.lowercase, 10);
+
+let id = nanoid();
+console.log(id);
+```
+
+Or instead you can require a specific dictionary
+
+```typescript
+import { lowercase as NANOID_DIC } from 'nanoid-dictionary';
+import { customAlphabet }          from 'nanoid';
+
+const nanoid         = customAlphabet(NANOID_DIC, 10);
+
+let id = nanoid();
+console.log(id);
+```
 
 ## Character sets
 
