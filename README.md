@@ -9,22 +9,13 @@ Install nanoid and dictionary
 
 `npm i nanoid nanoid-dictionary`
 
-Require a generator and pass a string from the dictionary
+Require a `customAlphabet` from `nanoid` and pass a string from the dictionary:
 
 ```javascript
-const generate = require('nanoid/generate');
-const dictionary = require('nanoid-dictionary');
+import { customAlphabet } from 'nanoid';
+import { lowercase } from 'nanoid-dictionary';
 
-const lowercaseRandomString = generate(dictionary.lowercase, 10);
-```
-
-Or instead you can require a specific dictionary
-
-```javascript
-const generate = require('nanoid/generate');
-const englishLowercase = require('nanoid-dictionary/lowercase');
-
-const lowercaseRandomString = generate(englishLowercase, 10);
+const lowercaseRandomString = customAlphabet(lowercase, 10);
 ```
 
 
@@ -35,53 +26,53 @@ const lowercaseRandomString = generate(englishLowercase, 10);
 Numbers from 0 to 9
 
 ```javascript
-const numbers = require('nanoid-dictionary/numbers');
+import { numbers } from 'nanoid-dictionary';
 ```
 
 ### `lowercase`
 
-Lowercase English letters.
-
-Available both as `alphabets.lowercase` and simply `lowercase`.
+Lowercase English letters: `abcdefghijklmnopqrstuvwxyz`
 
 ```javascript
-const englishLowercase = require('nanoid-dictionary/lowercase');
+import { lowercase } from 'nanoid-dictionary';
 ```
 
 ### `uppercase`
 
-Uppercase English letters.
-
-Available both as `alphabets.uppercase` and simply `uppercase`.
+Uppercase English letters: `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
 ```javascript
-const englishUppercase = require('nanoid-dictionary/uppercase');
+import { uppercase } from 'nanoid-dictionary';
 ```
 
 ### `alphanumeric`
 
-Combination of all the smallcase, uppercase charaters and numbers from 0 to 9
+Combination of all the lowercase, uppercase characters and numbers from 0 to 9
 
 Does not include any symbols or special characters
 
 ```javascript
-const alphanumeric = require('nanoid-dictionary/alphanumeric');
+import { alphanumeric } from 'nanoid-dictionary';
 ```
 
 ### `nolookalikes`
 
 Numbers and english alphabet without lookalikes: `1`, `l`, `I`, `0`, `O`, `o`, `u`, `v`, `5`, `S`, `s`, `2`, `Z`.
 
+Complete set: `346789ABCDEFGHJKLMNPQRTUVWXYabcdefghijkmnpqrtwxyz`
+
 ```javascript
-const nolookalikes = require('nanoid-dictionary/nolookalikes');
+import { nolookalikes } from 'nanoid-dictionary';
 ```
 
-### `nolookalikes-safe`
+### `nolookalikesSafe`
 
 Same as `noolookalikes` but with removed vowels and following letters: `3`, `4`, `x`, `X`, `V`.
 
 This list should protect you from accidentally getting obscene words in generated strings.
 
+Complete set: `6789BCDFGHJKLMNPQRTWbcdfghjkmnpqrtwz`
+
 ```javascript
-const nolookalikesSafe = require('nanoid-dictionary/nolookalikes-safe');
+import { nolookalikesSafe } from 'nanoid-dictionary';
 ```

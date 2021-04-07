@@ -1,5 +1,12 @@
 # Change log
 
+## 4.3.0
+
+- Updated Readme to include updated instructions, added sets preview
+- Updated examples to use ES imports, removed examples for direct file imports ( `nanoid-dictionary/lowercase.js`, etc.)
+- Added typings
+- Simplified index.js
+
 ## 4.2.0
 
 - Added `alphanumeric` set ([#7](https://github.com/CyberAP/nanoid-dictionary/pull/7)) by [@anshulsahni](https://github.com/anshulsahni)
