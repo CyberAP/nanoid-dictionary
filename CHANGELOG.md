@@ -2,7 +2,7 @@
 
 ## 4.3.0
 
-- Updated Readme to include updated instructions, added sets preview
+- Updated Readme to include updated instructions (thanks [@kyle-chine-leismore](https://github.com/kyle-chine-leismore)), added sets preview
 - Updated examples to use ES imports, removed examples for direct file imports ( `nanoid-dictionary/lowercase.js`, etc.)
 - Added typings
 - Simplified index.js
