@@ -1,0 +1,1 @@
+export const nolookalikesSafe = '6789BCDFGHJKLMNPQRTWbcdfghjkmnpqrtwz';

@@ -1,9 +1,27 @@
 {
   "name": "nanoid-dictionary",
-  "version": "4.3.0",
+  "version": "5.0.0-beta.1",
   "description": "Predefined character sets to use with nanoid",
-  "main": "index.js",
+  "main": "dist/nanoid-dictionary.cjs.js",
+  "module": "dist/nanoid-dictionary.esm.js",
+  "browser": "dist/nanoid-dictionary.umd.js",
   "author": "Stanislav Lashmanov <stasvarenkin@gmail.com>",
   "license": "MIT",
-  "repository": "github:CyberAP/nanoid-dictionary"
+  "repository": "github:CyberAP/nanoid-dictionary",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/nanoid-dictionary.d.ts",
+  "scripts": {
+    "build": "rollup -c && tsc"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup": "^2.47.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tsc": "^1.20150623.0",
+    "typescript": "^4.2.4"
+  }
 }

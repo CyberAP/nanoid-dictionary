@@ -1,5 +1,11 @@
 # Change log
 
+## 5.0.0-beta.1
+
+- **BREAKING**: Removed path imports (`const numbers = require('nanoid-dictionary/numbers')`)
+- Rewritten commonjs modules to es modules, added a build step
+- Added support for commonjs, umd and browser builds
+
 ## 4.3.0
 
 - Updated Readme to include updated instructions (thanks [@kyle-chine-leismore](https://github.com/kyle-chine-leismore)), added sets preview
