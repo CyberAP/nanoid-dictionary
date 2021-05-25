@@ -29,6 +29,22 @@ Numbers from 0 to 9
 import { numbers } from 'nanoid-dictionary';
 ```
 
+### `hexadecimalLowercase`
+
+Lowercase English hexadecimal lowercase characters: `0123456789abcdef`
+
+```javascript
+import { hexadecimalLowercase } from 'nanoid-dictionary';
+```
+
+### `hexadecimalUppercase`
+
+Lowercase English hexadecimal uppercase characters: `0123456789ABCDEF`
+
+```javascript
+import { hexadecimalUppercase } from 'nanoid-dictionary';
+```
+
 ### `lowercase`
 
 Lowercase English letters: `abcdefghijklmnopqrstuvwxyz`
