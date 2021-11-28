@@ -23,5 +23,8 @@
     "rollup-plugin-terser": "^7.0.2",
     "tsc": "^1.20150623.0",
     "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "nanoid": "0.x"
   }
 }
