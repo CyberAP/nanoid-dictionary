@@ -83,7 +83,7 @@ import { nolookalikes } from 'nanoid-dictionary';
 
 ### `nolookalikesSafe`
 
-Same as `noolookalikes` but with removed vowels and following letters: `3`, `4`, `x`, `X`, `V`.
+Same as `nolookalikes` but with removed vowels and following letters: `3`, `4`, `x`, `X`, `V`.
 
 This list should protect you from accidentally getting obscene words in generated strings.
 
