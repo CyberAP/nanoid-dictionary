@@ -1,3 +1,3 @@
 import { numbers } from './numbers';
 
-export const hecadecimalUppercase = numbers + 'ABCDEF';
+export const hexadecimalUppercase = numbers + 'ABCDEF';
