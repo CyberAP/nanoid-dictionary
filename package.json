@@ -1,6 +1,6 @@
 {
   "name": "nanoid-dictionary",
-  "version": "5.0.0-beta.1",
+  "version": "5.0.0-beta.2",
   "description": "Predefined character sets to use with nanoid",
   "main": "dist/nanoid-dictionary.cjs.js",
   "module": "dist/nanoid-dictionary.esm.js",
