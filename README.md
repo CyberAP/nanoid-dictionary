@@ -3,11 +3,18 @@ Predefined character sets to use with [nanoid](https://github.com/ai/nanoid). Us
 
 [![npm](https://img.shields.io/npm/v/nanoid-dictionary)](https://www.npmjs.com/package/nanoid-dictionary)
 
-## Usage
 
+## Install
 Install nanoid and dictionary
 
 `npm i nanoid nanoid-dictionary`
+
+_Note_: If you plan on using `import` style ES6 syntax (or node complains that it can't find the named export of the thing you're importing from `nanoid-dictionary` please rather install the beta version, like this
+
+`npm i nanoid-dictionary@beta`
+
+
+## Usage
 
 Require a `customAlphabet` from `nanoid` and pass a string from the dictionary:
 
