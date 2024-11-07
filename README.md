@@ -46,7 +46,7 @@ import { hexadecimalLowercase } from 'nanoid-dictionary';
 
 ### `hexadecimalUppercase`
 
-Lowercase English hexadecimal uppercase characters: `0123456789ABCDEF`
+Uppercase English hexadecimal uppercase characters: `0123456789ABCDEF`
 
 ```javascript
 import { hexadecimalUppercase } from 'nanoid-dictionary';
