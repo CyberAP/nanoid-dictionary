@@ -9,14 +9,9 @@ Install nanoid and dictionary
 
 `npm i nanoid nanoid-dictionary`
 
-_Note_: If you plan on using `import` style ES6 syntax (or node complains that it can't find the named export of the thing you're importing from `nanoid-dictionary` please rather install the beta version, like this
-
-`npm i nanoid-dictionary@beta`
-
-
 ## Usage
 
-Require a `customAlphabet` from `nanoid` and pass a string from the dictionary:
+Require a [`customAlphabet`](https://github.com/ai/nanoid#custom-alphabet-or-size) from `nanoid` and pass a string from the dictionary:
 
 ```javascript
 import { customAlphabet } from 'nanoid';
@@ -24,7 +19,6 @@ import { lowercase } from 'nanoid-dictionary';
 
 const lowercaseRandomString = customAlphabet(lowercase, 10);
 ```
-
 
 ## Character sets
 
