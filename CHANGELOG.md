@@ -1,5 +1,12 @@
 # Change log
 
+## 5.0.0
+
+- Stable release
+- Added ESM, UMD support
+- **BREAKING**: Removed path imports (`const numbers = require('nanoid-dictionary/numbers')`)
+- Added `cookieSafe` and `cookieUnsafe` sets [#14](https://github.com/CyberAP/nanoid-dictionary/issues/14)
+
 ## 5.0.0-beta.1
 
 - **BREAKING**: Removed path imports (`const numbers = require('nanoid-dictionary/numbers')`)

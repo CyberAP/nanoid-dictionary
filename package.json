@@ -1,27 +1,35 @@
 {
   "name": "nanoid-dictionary",
-  "version": "5.0.0-beta.2",
+  "version": "5.0.0",
+  "homepage": "https://github.com/CyberAP/nanoid-dictionary",
   "description": "Predefined character sets to use with nanoid",
-  "main": "dist/nanoid-dictionary.cjs.js",
-  "module": "dist/nanoid-dictionary.esm.js",
-  "browser": "dist/nanoid-dictionary.umd.js",
+  "main": "dist/dictionary.cjs.js",
+  "module": "dist/dictionary.esm.js",
+  "browser": "dist/dictionary.umd.js",
+  "types": "dist/dictionary.d.ts",
   "author": "Stanislav Lashmanov <stasvarenkin@gmail.com>",
   "license": "MIT",
-  "repository": "github:CyberAP/nanoid-dictionary",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberAP/nanoid-dictionary.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CyberAP/nanoid-dictionary/issues"
+  },
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
   ],
-  "types": "dist/nanoid-dictionary.d.ts",
   "scripts": {
-    "build": "rollup -c && tsc"
+    "build": "rollup -c"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^18.1.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "rollup": "^2.47.0",
-    "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "tsc": "^1.20150623.0",
-    "typescript": "^4.2.4"
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.40.0",
+    "rollup-plugin-delete": "^3.0.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.3"
   }
 }

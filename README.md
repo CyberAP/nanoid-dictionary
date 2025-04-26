@@ -99,3 +99,20 @@ Complete set: `6789BCDFGHJKLMNPQRTWbcdfghjkmnpqrtwz`
 ```javascript
 import { nolookalikesSafe } from 'nanoid-dictionary';
 ```
+
+### `cookieSafe`
+
+All the allowed characters for a cookie value defined in [RFC6225](https://www.rfc-editor.org/rfc/rfc6265.txt).
+
+```javascript
+import { cookieSafe } from 'nanoid-dictionary';
+```
+
+### `cookieUnsafe`
+
+All the characters that [actually work in modern browsers](https://stackoverflow.com/a/1969339).
+Might not be suitable for servers, use with caution.
+
+```javascript
+import { cookieUnsafe } from 'nanoid-dictionary';
+```
