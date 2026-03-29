@@ -26,7 +26,7 @@
     "build": "rollup -c"
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-terser": "^1.0.0",
     "rollup": "^4.40.0",
     "rollup-plugin-delete": "^3.0.1",
     "rollup-plugin-typescript2": "^0.36.0",
